@@ -1,10 +1,11 @@
-﻿// INTRO SCENE
+// LEFT_CAVE SCENE
 module scenes {
-    export class Intro extends objects.Scene {
+    export class Sam extends objects.Scene {
+
         //PRIVATE INSTANCE VARIABLES ++++++++++++
-        private _introImage: createjs.Bitmap;
-        private _ashleyButton: objects.Button;
-        private _samButton: objects.Button;
+        private _samImage: createjs.Bitmap;
+        private _runButton: objects.Button;
+        private _hideButton: objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
@@ -15,54 +16,56 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add Intro Image
-            this._introImage = new createjs.Bitmap("../../Assets/images/Start.png");
-            this.addChild(this._introImage);
+            // add LeftCave Image
+            this._samImage = new createjs.Bitmap("../../Assets/images/Sam.png");
+            this.addChild(this._samImage);
             
             // add the LEFT_CAVE button to the MENU scene
-            this._ashleyButton = new objects.Button(
-                "ashleyButton",
+            this._runButton = new objects.Button(
+                "runButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 180);
-            this.addChild(this._ashleyButton);
+            this.addChild(this._runButton);
             
             // LEFT_CAVE Button event listener
-            this._ashleyButton.on("click", this._ashleyButtonClick, this);
+            this._runButton.on("click", this._runButtonClick, this);
             
             // add the LEFT_CAVE button to the MENU scene
-            this._samButton = new objects.Button(
-                "samButton",
+            this._hideButton = new objects.Button(
+                "hideButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 180);
-            this.addChild(this._samButton);
+            this.addChild(this._hideButton);
             
             // LEFT_CAVE Button event listener
-            this._samButton.on("click", this._samButtonClick, this);
+            this._hideButton.on("click", this._hideButtonClick, this);
             
             // add this scene to the global stage container
             stage.addChild(this);
+
+
         }
 
-        // INTRO Scene updates here
+        // PLAY Scene updates here
         public update(): void {
 
         }
-        
-        
+               
         //EVENT HANDLERS ++++++++++++++++++++
         
         // LEFT_CAVE Button click event handler
-        private _ashleyButtonClick(event: createjs.MouseEvent) {
+        private _runButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.ASHLEY;
+            scene = config.Scene.INTRO;
             changeScene();
         }
         
-        // RIGHT_CAVE Button click event handler
-        private _samButtonClick(event: createjs.MouseEvent) {
+        // LEFT_CAVE Button click event handler
+        private _hideButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.SAM;
+            scene = config.Scene.INTRO;
             changeScene();
         }
+
     }
 }

@@ -7,8 +7,8 @@ var currentScene;
 var scene;
 // Game Scenes
 var intro;
-var leftCave;
-var rightCave;
+var ashley;
+var sam;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -57,19 +57,19 @@ function changeScene() {
             currentScene = intro;
             console.log("Starting INTRO Scene");
             break;
-        case config.Scene.LEFT_CAVE:
+        case config.Scene.ASHLEY:
             // show the PLAY scene
             stage.removeAllChildren();
-            leftCave = new scenes.LeftCave();
-            currentScene = leftCave;
-            console.log("Starting LEFT_CAVE Scene");
+            ashley = new scenes.Ashley();
+            currentScene = ashley;
+            console.log("Starting ASHLEY Scene");
             break;
-        case config.Scene.RIGHT_CAVE:
+        case config.Scene.SAM:
             // show the game OVER scene
             stage.removeAllChildren();
-            rightCave = new scenes.RightCave();
-            currentScene = rightCave;
-            console.log("Starting RIGHT_CAVE Scene");
+            sam = new scenes.Sam();
+            currentScene = sam;
+            console.log("Starting SAM Scene");
             break;
     }
     console.log(currentScene.numChildren);
