@@ -12,6 +12,7 @@ var scene: number;
 var intro: scenes.Intro;
 var ashley: scenes.Ashley;
 var sam: scenes.Sam;
+var synopsis: scenes.Synopsis;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -33,7 +34,7 @@ function init(): void {
     setupStats(); 
     
     // set initial scene
-    scene = config.Scene.INTRO;
+    scene = config.Scene.SYNOPSIS;
     changeScene();
 }
 
@@ -67,6 +68,13 @@ function changeScene(): void {
     
     // Launch various scenes
     switch (scene) {
+        case config.Scene.SYNOPSIS:
+            // show the SYNOPSIS scene
+            stage.removeAllChildren();
+            synopsis = new scenes.Synopsis();
+            currentScene = synopsis;
+            console.log("Starting SYNOPSIS Scene");
+            break;
         case config.Scene.INTRO:
             // show the MENU scene
             stage.removeAllChildren();

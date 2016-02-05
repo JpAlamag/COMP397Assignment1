@@ -2,9 +2,11 @@
 
     // Scene Constants
     export class Scene {
-        public static INTRO: number = 0;
-        public static ASHLEY: number = 1;
-        public static SAM: number = 2;
+        public static SYNOPSIS: number = 0;
+        public static INTRO: number = 1;
+        public static ASHLEY: number = 2;
+        public static SAM: number = 3;
+        
  
     }
     

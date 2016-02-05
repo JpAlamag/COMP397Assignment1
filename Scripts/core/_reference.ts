@@ -9,3 +9,4 @@
 /// <reference path="../scenes/sam.ts" />
 /// <reference path="../scenes/ashley.ts" />
 /// <reference path="../scenes/intro.ts" />
+/// <reference path="../scenes/synopsis.ts" />

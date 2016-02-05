@@ -6,38 +6,38 @@ var __extends = (this && this.__extends) || function (d, b) {
 // LEFT_CAVE SCENE
 var scenes;
 (function (scenes) {
-    var RightCave = (function (_super) {
-        __extends(RightCave, _super);
+    var Synopsis = (function (_super) {
+        __extends(Synopsis, _super);
         // CONSTRUCTOR ++++++++++++++++++++++
-        function RightCave() {
+        function Synopsis() {
             _super.call(this);
         }
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
-        RightCave.prototype.start = function () {
+        Synopsis.prototype.start = function () {
             // add LeftCave Image
-            this._rightCaveImage = new createjs.Bitmap("../../Assets/images/RightCave.png");
-            this.addChild(this._rightCaveImage);
-            // add the BACK button to the OVER scene
-            this._startOverButton = new objects.Button("StartOverButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
-            this.addChild(this._startOverButton);
-            // START_OVER Button event listener
-            this._startOverButton.on("click", this._startOverButtonClick, this);
+            this._synopsisImage = new createjs.Bitmap("../../Assets/images/Synopsis.png");
+            this.addChild(this._synopsisImage);
+            // add the LEFT_CAVE button to the MENU scene
+            this._startButton = new objects.Button("startButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            this.addChild(this._startButton);
+            // LEFT_CAVE Button event listener
+            this._startButton.on("click", this._startButtonClick, this);
             // add this scene to the global stage container
             stage.addChild(this);
         };
         // PLAY Scene updates here
-        RightCave.prototype.update = function () {
+        Synopsis.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
         // START_OVER Button click event handler
-        RightCave.prototype._startOverButtonClick = function (event) {
+        Synopsis.prototype._startButtonClick = function (event) {
             // Switch to the INTRO Scene
             scene = config.Scene.INTRO;
             changeScene();
         };
-        return RightCave;
+        return Synopsis;
     })(objects.Scene);
-    scenes.RightCave = RightCave;
+    scenes.Synopsis = Synopsis;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=rightcave.js.map
+//# sourceMappingURL=synopsis.js.map

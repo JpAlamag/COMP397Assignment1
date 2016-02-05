@@ -9,6 +9,7 @@ var scene;
 var intro;
 var ashley;
 var sam;
+var synopsis;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -23,7 +24,7 @@ function init() {
     // sets up our stats counting workflow
     setupStats();
     // set initial scene
-    scene = config.Scene.INTRO;
+    scene = config.Scene.SYNOPSIS;
     changeScene();
 }
 // Main Game Loop function that handles what happens each "tick" or frame
@@ -50,6 +51,13 @@ function setupStats() {
 function changeScene() {
     // Launch various scenes
     switch (scene) {
+        case config.Scene.SYNOPSIS:
+            // show the SYNOPSIS scene
+            stage.removeAllChildren();
+            synopsis = new scenes.Synopsis();
+            currentScene = synopsis;
+            console.log("Starting SYNOPSIS Scene");
+            break;
         case config.Scene.INTRO:
             // show the MENU scene
             stage.removeAllChildren();

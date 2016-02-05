@@ -4,9 +4,10 @@ var config;
     var Scene = (function () {
         function Scene() {
         }
-        Scene.INTRO = 0;
-        Scene.ASHLEY = 1;
-        Scene.SAM = 2;
+        Scene.SYNOPSIS = 0;
+        Scene.INTRO = 1;
+        Scene.ASHLEY = 2;
+        Scene.SAM = 3;
         return Scene;
     })();
     config.Scene = Scene;
