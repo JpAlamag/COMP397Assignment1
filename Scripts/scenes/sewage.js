@@ -24,7 +24,7 @@ var scenes;
             // fightButton Button event listener
             this._exitBasementButton.on("click", this._exitBasementButtonClick, this);
             // add the giveUpButton button to the MENU scene
-            this._keepRunningButton = new objects.Button("giveUpButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this._keepRunningButton = new objects.Button("keepRunningButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._keepRunningButton);
             // giveUpButton Button event listener
             this._keepRunningButton.on("click", this._keepRunningButtonClick, this);
@@ -38,13 +38,13 @@ var scenes;
         // fightButton Button click event handler
         Sewage.prototype._exitBasementButtonClick = function (event) {
             // Switch to the Cliff Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.EXIT_BASEMENT;
             changeScene();
         };
         // giveUp Button click event handler
         Sewage.prototype._keepRunningButtonClick = function (event) {
             // Switch to the Cornered Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.KEEP_RUNNING;
             changeScene();
         };
         return Sewage;

@@ -16,6 +16,8 @@
         public static REJECT_HER: number = 11;
         public static FIGHT: number = 12;
         public static GIVEUP: number = 13;
+        public static EXIT_BASEMENT: number = 14;
+        public static KEEP_RUNNING: number = 15;
 
         
  

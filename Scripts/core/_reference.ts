@@ -20,3 +20,5 @@
 /// <reference path="../scenes/rejectHer.ts" />
 /// <reference path="../scenes/fight.ts" />
 /// <reference path="../scenes/giveUp.ts" />
+/// <reference path="../scenes/keepRunning.ts" />
+/// <reference path="../scenes/exitBasement.ts" />

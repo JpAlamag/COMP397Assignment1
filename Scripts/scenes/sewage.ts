@@ -32,7 +32,7 @@ module scenes {
             
             // add the giveUpButton button to the MENU scene
             this._keepRunningButton = new objects.Button(
-                "giveUpButton",
+                "keepRunningButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._keepRunningButton);
@@ -56,14 +56,14 @@ module scenes {
         // fightButton Button click event handler
         private _exitBasementButtonClick(event: createjs.MouseEvent) {
             // Switch to the Cliff Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.EXIT_BASEMENT;
             changeScene();
         }
         
         // giveUp Button click event handler
         private _keepRunningButtonClick(event: createjs.MouseEvent) {
             // Switch to the Cornered Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.KEEP_RUNNING;
             changeScene();
         }
 

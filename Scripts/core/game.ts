@@ -23,6 +23,8 @@ var acceptHer: scenes.acceptHer;
 var rejectHer: scenes.rejectHer;
 var fight: scenes.Fight;
 var giveUp: scenes.giveUp;
+var exitBasement: scenes.ExitBasement;
+var keepRunning: scenes.KeepRunning;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -163,20 +165,33 @@ function changeScene(): void {
             console.log("Starting REJECT_HER Scene");
             break;
         case config.Scene.FIGHT:
-            // show the REJECT_HER scene
+            // show the FIGHT scene
             stage.removeAllChildren();
             fight = new scenes.Fight();
             currentScene = fight;
             console.log("Starting FIGHT Scene");
             break;           
         case config.Scene.GIVEUP:
-            // show the REJECT_HER scene
+            // show the GIVEUP scene
             stage.removeAllChildren();
             giveUp = new scenes.giveUp();
             currentScene = giveUp;
             console.log("Starting GIVEUP Scene");
             break; 
-           
+        case config.Scene.EXIT_BASEMENT:
+            // show the EXIT_BASEMENT scene
+            stage.removeAllChildren();
+            exitBasement = new scenes.ExitBasement();
+            currentScene = exitBasement;
+            console.log("Starting EXIT_BASEMENT Scene");
+            break;         
+        case config.Scene.KEEP_RUNNING:
+            // show the KEEP_RUNNING scene
+            stage.removeAllChildren();
+            keepRunning = new scenes.KeepRunning();
+            currentScene = keepRunning;
+            console.log("Starting KEEP_RUNNING Scene");
+            break;    
            
             
 

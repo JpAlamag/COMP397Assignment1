@@ -18,6 +18,8 @@ var config;
         Scene.REJECT_HER = 11;
         Scene.FIGHT = 12;
         Scene.GIVEUP = 13;
+        Scene.EXIT_BASEMENT = 14;
+        Scene.KEEP_RUNNING = 15;
         return Scene;
     })();
     config.Scene = Scene;
