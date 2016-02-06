@@ -169,12 +169,12 @@ function changeScene(): void {
             currentScene = fight;
             console.log("Starting FIGHT Scene");
             break;           
-        case config.Scene.GIVE_UP:
+        case config.Scene.GIVEUP:
             // show the REJECT_HER scene
             stage.removeAllChildren();
             giveUp = new scenes.giveUp();
             currentScene = giveUp;
-            console.log("Starting REJECT_HER Scene");
+            console.log("Starting GIVEUP Scene");
             break; 
            
            

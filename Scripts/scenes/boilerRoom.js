@@ -44,7 +44,7 @@ var scenes;
         // giveUp Button click event handler
         BoilerRoom.prototype._giveUpButtonClick = function (event) {
             // Switch to the Cornered Scene
-            scene = config.Scene.GIVE_UP;
+            scene = config.Scene.GIVEUP;
             changeScene();
         };
         return BoilerRoom;

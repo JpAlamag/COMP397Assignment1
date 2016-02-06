@@ -17,7 +17,7 @@ var config;
         Scene.ACCEPT_HER = 10;
         Scene.REJECT_HER = 11;
         Scene.FIGHT = 12;
-        Scene.GIVE_UP = 13;
+        Scene.GIVEUP = 13;
         return Scene;
     })();
     config.Scene = Scene;

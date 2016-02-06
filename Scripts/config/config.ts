@@ -15,7 +15,8 @@
         public static ACCEPT_HER: number = 10;
         public static REJECT_HER: number = 11;
         public static FIGHT: number = 12;
-        public static GIVE_UP: number = 13;
+        public static GIVEUP: number = 13;
+
         
  
     }
