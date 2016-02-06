@@ -56,14 +56,14 @@ module scenes {
         // fightButton Button click event handler
         private _fightButtonClick(event: createjs.MouseEvent) {
             // Switch to the Cliff Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.FIGHT;
             changeScene();
         }
         
         // LEFT_CAVE Button click event handler
         private _giveUpButtonClick(event: createjs.MouseEvent) {
             // Switch to the Cornered Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.GIVE_UP;
             changeScene();
         }
 
