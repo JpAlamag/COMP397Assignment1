@@ -38,7 +38,7 @@ var scenes;
         // Run Button click event handler
         Sam.prototype._runButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.RUN;
             changeScene();
         };
         // Hide Button click event handler

@@ -75,13 +75,6 @@ function changeScene() {
             currentScene = ashley;
             console.log("Starting ASHLEY Scene");
             break;
-        case config.Scene.SEWER:
-            //show the SEWER scene
-            stage.removeAllChildren();
-            sewer = new scenes.Sewer();
-            currentScene = sewer;
-            console.log("Starting SEWER Scene");
-            break;
         case config.Scene.BOILER_ROOM:
             //show the BOILER_ROOM scene
             stage.removeAllChildren();
@@ -89,18 +82,27 @@ function changeScene() {
             currentScene = boilerRoom;
             console.log("Starting BOILER_ROOM Scene");
             break;
+        case config.Scene.SEWER:
+            //show the SEWER scene
+            stage.removeAllChildren();
+            sewer = new scenes.Sewer();
+            currentScene = sewer;
+            console.log("Starting Sewer Scene");
+            break;
         case config.Scene.SAM:
             // show the SAM scene
             stage.removeAllChildren();
             sam = new scenes.Sam();
             currentScene = sam;
             console.log("Starting SAM Scene");
+            break;
         case config.Scene.RUN:
-            // show the SAM scene
+            // show the RUN scene
             stage.removeAllChildren();
             run = new scenes.Run();
             currentScene = run;
             console.log("Starting RUN Scene");
+            break;
     }
     console.log(currentScene.numChildren);
 }
