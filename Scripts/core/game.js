@@ -14,6 +14,7 @@ var sewer;
 var boilerRoom;
 var run;
 var hide;
+var killSam;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -110,6 +111,13 @@ function changeScene() {
             hide = new scenes.Hide();
             currentScene = hide;
             console.log("Starting HIDE Scene");
+            break;
+        case config.Scene.KILL_SAM:
+            // show the KILL_SAM scene
+            stage.removeAllChildren();
+            killSam = new scenes.KillSam();
+            currentScene = killSam;
+            console.log("Starting KILL_SAM Scene");
             break;
     }
     console.log(currentScene.numChildren);

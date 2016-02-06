@@ -9,5 +9,7 @@
 /// <reference path="../scenes/sewer.ts" />
 /// <reference path="../scenes/synopsis.ts" />
 /// <reference path="../scenes/boilerRoom.ts" />
-/// <reference path="../scenes/Run.ts" /> 
+/// <reference path="../scenes/Run.ts" />
+/// <reference path="../scenes/hide.ts" />
+/// <reference path="../scenes/killSam.ts" /> 
 //# sourceMappingURL=_reference.js.map

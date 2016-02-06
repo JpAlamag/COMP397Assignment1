@@ -10,6 +10,7 @@
         public static BOILER_ROOM: number = 5;
         public static RUN: number = 6;
         public static HIDE: number = 7;
+        public static KILL_SAM: number = 8;
         
  
     }

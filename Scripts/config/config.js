@@ -12,6 +12,7 @@ var config;
         Scene.BOILER_ROOM = 5;
         Scene.RUN = 6;
         Scene.HIDE = 7;
+        Scene.KILL_SAM = 8;
         return Scene;
     })();
     config.Scene = Scene;

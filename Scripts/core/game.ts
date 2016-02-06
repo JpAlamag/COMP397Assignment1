@@ -17,6 +17,7 @@ var sewer: scenes.Sewer;
 var boilerRoom: scenes.BoilerRoom;
 var run: scenes.Run;
 var hide: scenes.Hide;
+var killSam: scenes.KillSam;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -128,6 +129,14 @@ function changeScene(): void {
             currentScene = hide;
             console.log("Starting HIDE Scene");
             break;
+        case config.Scene.KILL_SAM:
+            // show the KILL_SAM scene
+            stage.removeAllChildren();
+            killSam = new scenes.KillSam();
+            currentScene = killSam;
+            console.log("Starting KILL_SAM Scene");
+            break;
+            
            
            
             
