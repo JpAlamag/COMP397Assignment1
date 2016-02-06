@@ -38,13 +38,13 @@ var scenes;
         // fightButton Button click event handler
         BoilerRoom.prototype._fightButtonClick = function (event) {
             // Switch to the Cliff Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.FIGHT;
             changeScene();
         };
         // LEFT_CAVE Button click event handler
         BoilerRoom.prototype._giveUpButtonClick = function (event) {
             // Switch to the Cornered Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.GIVE_UP;
             changeScene();
         };
         return BoilerRoom;
