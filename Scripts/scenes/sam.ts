@@ -56,7 +56,7 @@ module scenes {
         // Run Button click event handler
         private _runButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.RUN;
             changeScene();
         }
         

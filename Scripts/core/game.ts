@@ -112,12 +112,14 @@ function changeScene(): void {
             sam = new scenes.Sam();
             currentScene = sam;
             console.log("Starting SAM Scene");
+            break;
         case config.Scene.RUN:
             // show the RUN scene
             stage.removeAllChildren();
             run = new scenes.Run();
             currentScene = run;
             console.log("Starting RUN Scene");
+            break;
             
 
     }
