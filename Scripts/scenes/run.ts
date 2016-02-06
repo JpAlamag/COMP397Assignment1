@@ -1,4 +1,4 @@
-// SAM SCENE
+// RUN SCENE
 module scenes {
     export class Run extends objects.Scene {
 
@@ -16,7 +16,7 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add Sam Image
+            // add Run Image
             this._runImage = new createjs.Bitmap("../../Assets/images/Run.png");
             this.addChild(this._runImage);
             
@@ -32,7 +32,7 @@ module scenes {
             
             // add the Hide button to the MENU scene
             this._saveSamButton = new objects.Button(
-                "hideButton",
+                "saveSamButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._saveSamButton);
