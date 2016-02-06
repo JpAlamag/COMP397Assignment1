@@ -55,14 +55,14 @@ module scenes {
         
         // Run Button click event handler
         private _killSamButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            // Switch to the KILL_SAM Scene
+            scene = config.Scene.KILL_SAM;
             changeScene();
         }
         
         // Hide Button click event handler
         private _saveSamButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the SAVE_SAM Scene
             scene = config.Scene.INTRO;
             changeScene();
         }

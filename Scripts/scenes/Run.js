@@ -37,13 +37,13 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // Run Button click event handler
         Run.prototype._killSamButtonClick = function (event) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            // Switch to the KILL_SAM Scene
+            scene = config.Scene.KILL_SAM;
             changeScene();
         };
         // Hide Button click event handler
         Run.prototype._saveSamButtonClick = function (event) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the SAVE_SAM Scene
             scene = config.Scene.INTRO;
             changeScene();
         };
