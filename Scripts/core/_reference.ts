@@ -15,3 +15,4 @@
 /// <reference path="../scenes/Run.ts" />
 /// <reference path="../scenes/hide.ts" />
 /// <reference path="../scenes/killSam.ts" />
+/// <reference path="../scenes/saveSam.ts" />

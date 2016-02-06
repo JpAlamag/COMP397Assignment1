@@ -13,6 +13,7 @@ var config;
         Scene.RUN = 6;
         Scene.HIDE = 7;
         Scene.KILL_SAM = 8;
+        Scene.SAVE_SAM = 9;
         return Scene;
     })();
     config.Scene = Scene;

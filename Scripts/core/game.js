@@ -15,6 +15,7 @@ var boilerRoom;
 var run;
 var hide;
 var killSam;
+var saveSam;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -118,6 +119,13 @@ function changeScene() {
             killSam = new scenes.KillSam();
             currentScene = killSam;
             console.log("Starting KILL_SAM Scene");
+            break;
+        case config.Scene.SAVE_SAM:
+            // show the SAVE_SAM scene
+            stage.removeAllChildren();
+            saveSam = new scenes.SaveSam();
+            currentScene = saveSam;
+            console.log("Starting SAVE_SAM Scene");
             break;
     }
     console.log(currentScene.numChildren);
