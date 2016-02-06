@@ -55,7 +55,7 @@ module scenes {
         // Sewer Button click event handler
         private _sewerButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.SEWAGE;
             changeScene();
         }
         
