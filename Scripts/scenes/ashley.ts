@@ -1,4 +1,4 @@
-// LEFT_CAVE SCENE
+// ASHLEY SCENE
 module scenes {
     export class Ashley extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
@@ -15,21 +15,21 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add LeftCave Image
+            // add Ashley Image
             this._ashleyImage = new createjs.Bitmap("../../Assets/images/Ashley.png");
             this.addChild(this._ashleyImage);
             
-            // add the LEFT_CAVE button to the MENU scene
+            // add the Sewer button to the MENU scene
             this._sewerButton = new objects.Button(
                 "sewerButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._sewerButton);
             
-            // LEFT_CAVE Button event listener
+            // Sewer Button event listener
             this._sewerButton.on("click", this._sewerButtonClick, this);
             
-            // add the LEFT_CAVE button to the MENU scene
+            // add the BoilerRoom button to the MENU scene
             this._boilerRoomButton = new objects.Button(
                 "boilerRoomButton",
                 config.Screen.CENTER_X + 100,
@@ -45,21 +45,21 @@ module scenes {
 
         }
 
-        // PLAY Scene updates here
+        // ASHLEY Scene updates here
         public update(): void {
 
         }
                
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // LEFT_CAVE Button click event handler
+        // Sewer Button click event handler
         private _sewerButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.SEWER;
             changeScene();
         }
         
-        // LEFT_CAVE Button click event handler
+        // BoilerRoom Button click event handler
         private _boilerRoomButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
             scene = config.Scene.INTRO;

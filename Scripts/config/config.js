@@ -8,6 +8,8 @@ var config;
         Scene.INTRO = 1;
         Scene.ASHLEY = 2;
         Scene.SAM = 3;
+        Scene.SEWER = 4;
+        Scene.BOILER_ROOM = 5;
         return Scene;
     })();
     config.Scene = Scene;

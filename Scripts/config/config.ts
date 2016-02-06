@@ -6,6 +6,8 @@
         public static INTRO: number = 1;
         public static ASHLEY: number = 2;
         public static SAM: number = 3;
+        public static SEWER: number = 4;
+        public static BOILER_ROOM: number = 5;
         
  
     }

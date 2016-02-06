@@ -1,4 +1,4 @@
-// LEFT_CAVE SCENE
+// SYNOPSIS SCENE
 module scenes {
     export class Synopsis extends objects.Scene {
 
@@ -15,18 +15,18 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add LeftCave Image
+            // add Synopsis Image
             this._synopsisImage = new createjs.Bitmap("../../Assets/images/Synopsis.png");
             this.addChild(this._synopsisImage);
             
-            // add the LEFT_CAVE button to the MENU scene
+            // add the Start button to the MENU scene
             this._startButton = new objects.Button(
                 "startButton",
-                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._startButton);
             
-            // LEFT_CAVE Button event listener
+            // Start Button event listener
             this._startButton.on("click", this._startButtonClick, this);
             
             // add this scene to the global stage container
@@ -35,14 +35,14 @@ module scenes {
 
         }
 
-        // PLAY Scene updates here
+        // Synopsis Scene updates here
         public update(): void {
 
         }
                
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // START_OVER Button click event handler
+        // Start Button click event handler
         private _startButtonClick(event: createjs.MouseEvent) {
             // Switch to the INTRO Scene
             scene = config.Scene.INTRO;
