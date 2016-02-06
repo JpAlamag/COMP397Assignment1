@@ -13,6 +13,7 @@ var synopsis;
 var sewer;
 var boilerRoom;
 var run;
+var hide;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -102,6 +103,13 @@ function changeScene() {
             run = new scenes.Run();
             currentScene = run;
             console.log("Starting RUN Scene");
+            break;
+        case config.Scene.HIDE:
+            // show the HIDE scene
+            stage.removeAllChildren();
+            hide = new scenes.Hide();
+            currentScene = hide;
+            console.log("Starting HIDE Scene");
             break;
     }
     console.log(currentScene.numChildren);

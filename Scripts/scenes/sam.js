@@ -37,14 +37,14 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // Run Button click event handler
         Sam.prototype._runButtonClick = function (event) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the RUN Scene
             scene = config.Scene.RUN;
             changeScene();
         };
         // Hide Button click event handler
         Sam.prototype._hideButtonClick = function (event) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            // Switch to the HIDE Scene
+            scene = config.Scene.HIDE;
             changeScene();
         };
         return Sam;

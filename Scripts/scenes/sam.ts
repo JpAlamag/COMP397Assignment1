@@ -55,15 +55,15 @@ module scenes {
         
         // Run Button click event handler
         private _runButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the RUN Scene
             scene = config.Scene.RUN;
             changeScene();
         }
         
         // Hide Button click event handler
         private _hideButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            // Switch to the HIDE Scene
+            scene = config.Scene.HIDE;
             changeScene();
         }
 

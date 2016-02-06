@@ -13,3 +13,4 @@
 /// <reference path="../scenes/synopsis.ts" />
 /// <reference path="../scenes/boilerRoom.ts" />
 /// <reference path="../scenes/Run.ts" />
+/// <reference path="../scenes/hide.ts" />

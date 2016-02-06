@@ -11,6 +11,7 @@ var config;
         Scene.SEWER = 4;
         Scene.BOILER_ROOM = 5;
         Scene.RUN = 6;
+        Scene.HIDE = 7;
         return Scene;
     })();
     config.Scene = Scene;

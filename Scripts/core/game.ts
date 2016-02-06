@@ -16,6 +16,7 @@ var synopsis: scenes.Synopsis;
 var sewer: scenes.Sewer;
 var boilerRoom: scenes.BoilerRoom;
 var run: scenes.Run;
+var hide: scenes.Hide;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -120,6 +121,15 @@ function changeScene(): void {
             currentScene = run;
             console.log("Starting RUN Scene");
             break;
+        case config.Scene.HIDE:
+            // show the HIDE scene
+            stage.removeAllChildren();
+            hide = new scenes.Hide();
+            currentScene = hide;
+            console.log("Starting HIDE Scene");
+            break;
+           
+           
             
 
     }
