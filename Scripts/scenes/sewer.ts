@@ -22,7 +22,7 @@ module scenes {
             
             // add the KeepRunning button to the MENU scene
             this._keepRunningButton = new objects.Button(
-                "keepRunningButton",
+                "KeepRunningButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._keepRunningButton);
@@ -32,7 +32,7 @@ module scenes {
             
             // add the ExitBasement button to the MENU scene
             this._exitBasementButton = new objects.Button(
-                "exitBasementButton",
+                "ExitBasementButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._exitBasementButton);

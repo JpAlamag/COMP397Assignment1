@@ -36,7 +36,7 @@ module scenes {
                 config.Screen.CENTER_Y + 180);
             this.addChild(this._boilerRoomButton);
             
-            // LEFT_CAVE Button event listener
+            // BoilerRoom Button event listener
             this._boilerRoomButton.on("click", this._boilerRoomButtonClick, this);
             
             // add this scene to the global stage container

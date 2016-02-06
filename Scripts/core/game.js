@@ -92,7 +92,7 @@ function changeScene() {
             //show the BOILER_ROOM scene
             stage.removeAllChildren();
             boilerRoom = new scenes.BoilerRoom();
-            currentScene = sewer;
+            currentScene = boilerRoom;
             console.log("Starting BOILER_ROOM Scene");
             break;
     }

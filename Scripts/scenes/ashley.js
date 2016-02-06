@@ -44,7 +44,7 @@ var scenes;
         // BoilerRoom Button click event handler
         Ashley.prototype._boilerRoomButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.BOILER_ROOM;
             changeScene();
         };
         return Ashley;
