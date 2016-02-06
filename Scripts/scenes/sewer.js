@@ -19,12 +19,12 @@ var scenes;
             this._sewerImage = new createjs.Bitmap("../../Assets/images/Sewer.png");
             this.addChild(this._sewerImage);
             // add the KeepRunning button to the MENU scene
-            this._keepRunningButton = new objects.Button("keepRunningButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
+            this._keepRunningButton = new objects.Button("KeepRunningButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._keepRunningButton);
             // KeepRunning Button event listener
             this._exitBasementButton.on("click", this._keepRunningButtonClick, this);
             // add the ExitBasement button to the MENU scene
-            this._exitBasementButton = new objects.Button("exitBasementButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
+            this._exitBasementButton = new objects.Button("ExitBasementButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._exitBasementButton);
             // ExitBasement Button event listener
             this._exitBasementButton.on("click", this._exitBasementButtonClick, this);

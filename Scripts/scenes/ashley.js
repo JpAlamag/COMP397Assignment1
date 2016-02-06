@@ -26,7 +26,7 @@ var scenes;
             // add the BoilerRoom button to the MENU scene
             this._boilerRoomButton = new objects.Button("boilerRoomButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 180);
             this.addChild(this._boilerRoomButton);
-            // LEFT_CAVE Button event listener
+            // BoilerRoom Button event listener
             this._boilerRoomButton.on("click", this._boilerRoomButtonClick, this);
             // add this scene to the global stage container
             stage.addChild(this);

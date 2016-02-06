@@ -74,13 +74,6 @@ function changeScene() {
             currentScene = ashley;
             console.log("Starting ASHLEY Scene");
             break;
-        case config.Scene.SAM:
-            // show the SAM scene
-            stage.removeAllChildren();
-            sam = new scenes.Sam();
-            currentScene = sam;
-            console.log("Starting SAM Scene");
-            break;
         case config.Scene.SEWER:
             //show the SEWER scene
             stage.removeAllChildren();
@@ -95,6 +88,12 @@ function changeScene() {
             currentScene = boilerRoom;
             console.log("Starting BOILER_ROOM Scene");
             break;
+        case config.Scene.SAM:
+            // show the SAM scene
+            stage.removeAllChildren();
+            sam = new scenes.Sam();
+            currentScene = sam;
+            console.log("Starting SAM Scene");
     }
     console.log(currentScene.numChildren);
 }
