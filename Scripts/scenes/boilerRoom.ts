@@ -60,7 +60,7 @@ module scenes {
             changeScene();
         }
         
-        // LEFT_CAVE Button click event handler
+        // giveUp Button click event handler
         private _giveUpButtonClick(event: createjs.MouseEvent) {
             // Switch to the Cornered Scene
             scene = config.Scene.GIVE_UP;

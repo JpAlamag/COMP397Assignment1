@@ -41,7 +41,7 @@ var scenes;
             scene = config.Scene.FIGHT;
             changeScene();
         };
-        // LEFT_CAVE Button click event handler
+        // giveUp Button click event handler
         BoilerRoom.prototype._giveUpButtonClick = function (event) {
             // Switch to the Cornered Scene
             scene = config.Scene.GIVE_UP;
