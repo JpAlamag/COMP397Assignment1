@@ -20,6 +20,7 @@ var hide: scenes.Hide;
 var killSam: scenes.KillSam;
 var saveSam: scenes.SaveSam;
 var acceptHer: scenes.acceptHer;
+var rejectHer: scenes.rejectHer;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -151,6 +152,13 @@ function changeScene(): void {
             acceptHer = new scenes.acceptHer();
             currentScene = acceptHer;
             console.log("Starting ACCEPT_HER Scene");
+            break;
+        case config.Scene.REJECT_HER:
+            // show the REJECT_HER scene
+            stage.removeAllChildren();
+            rejectHer = new scenes.rejectHer();
+            currentScene = rejectHer;
+            console.log("Starting REJECT_HER Scene");
             break;
             
            

@@ -63,7 +63,7 @@ module scenes {
         // reject Button click event handler
         private _rejectButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.REJECT_HER;
             changeScene();
         }
 

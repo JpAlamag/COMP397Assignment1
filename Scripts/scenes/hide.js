@@ -44,7 +44,7 @@ var scenes;
         // reject Button click event handler
         Hide.prototype._rejectButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.REJECT_HER;
             changeScene();
         };
         return Hide;

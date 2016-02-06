@@ -15,6 +15,7 @@ var config;
         Scene.KILL_SAM = 8;
         Scene.SAVE_SAM = 9;
         Scene.ACCEPT_HER = 10;
+        Scene.REJECT_HER = 11;
         return Scene;
     })();
     config.Scene = Scene;
