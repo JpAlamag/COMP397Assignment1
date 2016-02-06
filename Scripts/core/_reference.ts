@@ -18,3 +18,5 @@
 /// <reference path="../scenes/saveSam.ts" />
 /// <reference path="../scenes/acceptHer.ts" />
 /// <reference path="../scenes/rejectHer.ts" />
+/// <reference path="../scenes/fight.ts" />
+/// <reference path="../scenes/giveUp.ts" />

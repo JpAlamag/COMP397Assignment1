@@ -18,6 +18,8 @@ var killSam;
 var saveSam;
 var acceptHer;
 var rejectHer;
+var fight;
+var giveUp;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -141,6 +143,20 @@ function changeScene() {
             stage.removeAllChildren();
             rejectHer = new scenes.rejectHer();
             currentScene = rejectHer;
+            console.log("Starting REJECT_HER Scene");
+            break;
+        case config.Scene.FIGHT:
+            // show the REJECT_HER scene
+            stage.removeAllChildren();
+            fight = new scenes.Fight();
+            currentScene = fight;
+            console.log("Starting FIGHT Scene");
+            break;
+        case config.Scene.GIVE_UP:
+            // show the REJECT_HER scene
+            stage.removeAllChildren();
+            giveUp = new scenes.giveUp();
+            currentScene = giveUp;
             console.log("Starting REJECT_HER Scene");
             break;
     }
