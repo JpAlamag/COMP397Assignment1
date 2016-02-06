@@ -63,7 +63,7 @@ module scenes {
         // Hide Button click event handler
         private _saveSamButtonClick(event: createjs.MouseEvent) {
             // Switch to the SAVE_SAM Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.SAVE_SAM;
             changeScene();
         }
 

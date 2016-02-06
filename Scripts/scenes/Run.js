@@ -44,7 +44,7 @@ var scenes;
         // Hide Button click event handler
         Run.prototype._saveSamButtonClick = function (event) {
             // Switch to the SAVE_SAM Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.SAVE_SAM;
             changeScene();
         };
         return Run;
