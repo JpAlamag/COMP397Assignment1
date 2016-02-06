@@ -10,6 +10,7 @@ var config;
         Scene.SAM = 3;
         Scene.SEWER = 4;
         Scene.BOILER_ROOM = 5;
+        Scene.RUN = 6;
         return Scene;
     })();
     config.Scene = Scene;

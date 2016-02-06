@@ -12,6 +12,7 @@ var sam;
 var synopsis;
 var sewer;
 var boilerRoom;
+var run;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -94,6 +95,12 @@ function changeScene() {
             sam = new scenes.Sam();
             currentScene = sam;
             console.log("Starting SAM Scene");
+        case config.Scene.RUN:
+            // show the SAM scene
+            stage.removeAllChildren();
+            run = new scenes.Run();
+            currentScene = run;
+            console.log("Starting RUN Scene");
     }
     console.log(currentScene.numChildren);
 }

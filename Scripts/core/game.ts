@@ -15,6 +15,7 @@ var sam: scenes.Sam;
 var synopsis: scenes.Synopsis;
 var sewer: scenes.Sewer;
 var boilerRoom: scenes.BoilerRoom;
+var run: scenes.Run;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -111,6 +112,13 @@ function changeScene(): void {
             sam = new scenes.Sam();
             currentScene = sam;
             console.log("Starting SAM Scene");
+        case config.Scene.RUN:
+            // show the SAM scene
+            stage.removeAllChildren();
+            run = new scenes.Run();
+            currentScene = run;
+            console.log("Starting RUN Scene");
+            
 
     }
 

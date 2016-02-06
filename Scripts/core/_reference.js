@@ -8,5 +8,6 @@
 /// <reference path="../scenes/intro.ts" />
 /// <reference path="../scenes/synopsis.ts" />
 /// <reference path="../scenes/synopsis.ts" />
-/// <reference path="../scenes/boilerRoom.ts" /> 
+/// <reference path="../scenes/boilerRoom.ts" />
+/// <reference path="../scenes/Run.ts" /> 
 //# sourceMappingURL=_reference.js.map

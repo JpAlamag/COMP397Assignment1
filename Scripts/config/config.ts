@@ -8,6 +8,7 @@
         public static SAM: number = 3;
         public static SEWER: number = 4;
         public static BOILER_ROOM: number = 5;
+        public static RUN: number = 6;
         
  
     }
