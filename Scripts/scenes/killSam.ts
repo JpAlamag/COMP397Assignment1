@@ -17,7 +17,7 @@ module scenes {
         // Start Method
         public start(): void {
             // add Sam Image
-            this._killSamImage = new createjs.Bitmap("../../Assets/images/Sam.png");
+            this._killSamImage = new createjs.Bitmap("../../Assets/images/KillSam.png");
             this.addChild(this._killSamImage);
             
             // add the Start Over button to the MENU scene

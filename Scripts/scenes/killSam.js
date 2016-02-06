@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         KillSam.prototype.start = function () {
             // add Sam Image
-            this._killSamImage = new createjs.Bitmap("../../Assets/images/Sam.png");
+            this._killSamImage = new createjs.Bitmap("../../Assets/images/KillSam.png");
             this.addChild(this._killSamImage);
             // add the Start Over button to the MENU scene
             this._startOverButton = new objects.Button("StartOverButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
