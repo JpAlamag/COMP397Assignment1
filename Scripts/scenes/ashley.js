@@ -38,7 +38,7 @@ var scenes;
         // Sewer Button click event handler
         Ashley.prototype._sewerButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.SEWER;
+            scene = config.Scene.INTRO;
             changeScene();
         };
         // BoilerRoom Button click event handler

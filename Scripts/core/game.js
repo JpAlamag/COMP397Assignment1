@@ -10,7 +10,7 @@ var intro;
 var ashley;
 var sam;
 var synopsis;
-var sewer;
+var sewage;
 var boilerRoom;
 var run;
 var hide;
@@ -89,12 +89,12 @@ function changeScene() {
             currentScene = boilerRoom;
             console.log("Starting BOILER_ROOM Scene");
             break;
-        case config.Scene.SEWER:
-            //show the SEWER scene
+        case config.Scene.SEWAGE:
+            //show the SEWAGE scene
             stage.removeAllChildren();
-            sewer = new scenes.Sewer();
-            currentScene = sewer;
-            console.log("Starting Sewer Scene");
+            sewage = new scenes.Sewage();
+            currentScene = sewage;
+            console.log("Starting SEWAGE Scene");
             break;
         case config.Scene.SAM:
             // show the SAM scene
