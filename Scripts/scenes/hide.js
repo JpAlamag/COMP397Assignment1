@@ -38,7 +38,7 @@ var scenes;
         // accept Button click event handler
         Hide.prototype._acceptButtonClick = function (event) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.ACCEPT_HER;
             changeScene();
         };
         // reject Button click event handler
