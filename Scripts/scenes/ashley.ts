@@ -62,7 +62,7 @@ module scenes {
         // BoilerRoom Button click event handler
         private _boilerRoomButtonClick(event: createjs.MouseEvent) {
             // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.INTRO;
+            scene = config.Scene.BOILER_ROOM;
             changeScene();
         }
 
