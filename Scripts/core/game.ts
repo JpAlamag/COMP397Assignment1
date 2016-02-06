@@ -92,19 +92,19 @@ function changeScene(): void {
             currentScene = ashley;
             console.log("Starting ASHLEY Scene");
             break;
-        case config.Scene.SEWER:
-            //show the SEWER scene
-            stage.removeAllChildren();
-            sewer = new scenes.Sewer();
-            currentScene = sewer;
-            console.log("Starting SEWER Scene");
-            break;
         case config.Scene.BOILER_ROOM:
             //show the BOILER_ROOM scene
             stage.removeAllChildren();
             boilerRoom = new scenes.BoilerRoom();
             currentScene = boilerRoom;
             console.log("Starting BOILER_ROOM Scene");
+            break;
+        case config.Scene.SEWER:
+            //show the SEWER scene
+            stage.removeAllChildren();
+            sewer = new scenes.Sewer();
+            currentScene = sewer;
+            console.log ("Starting Sewer Scene");
             break;
         case config.Scene.SAM:
             // show the SAM scene
@@ -113,7 +113,7 @@ function changeScene(): void {
             currentScene = sam;
             console.log("Starting SAM Scene");
         case config.Scene.RUN:
-            // show the SAM scene
+            // show the RUN scene
             stage.removeAllChildren();
             run = new scenes.Run();
             currentScene = run;
