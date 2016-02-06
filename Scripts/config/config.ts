@@ -12,6 +12,7 @@
         public static HIDE: number = 7;
         public static KILL_SAM: number = 8;
         public static SAVE_SAM: number = 9;
+        public static ACCEPT_HER: number = 10;
         
  
     }

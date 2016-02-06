@@ -19,6 +19,7 @@ var run: scenes.Run;
 var hide: scenes.Hide;
 var killSam: scenes.KillSam;
 var saveSam: scenes.SaveSam;
+var acceptHer: scenes.acceptHer;
 
 function init(): void {
     // create a reference the HTML canvas Element
@@ -143,6 +144,13 @@ function changeScene(): void {
             saveSam = new scenes.SaveSam();
             currentScene = saveSam;
             console.log("Starting SAVE_SAM Scene");
+            break;        
+        case config.Scene.ACCEPT_HER:
+            // show the ACCEPT_HER scene
+            stage.removeAllChildren();
+            acceptHer = new scenes.acceptHer();
+            currentScene = acceptHer;
+            console.log("Starting ACCEPT_HER Scene");
             break;
             
            

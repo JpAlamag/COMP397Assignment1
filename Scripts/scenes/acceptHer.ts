@@ -1,9 +1,9 @@
-// KILL_SAM SCENE
+// ACCEPT_HER SCENE
 module scenes {
-    export class SaveSam extends objects.Scene {
+    export class acceptHer extends objects.Scene {
 
         //PRIVATE INSTANCE VARIABLES ++++++++++++
-        private _saveSamImage: createjs.Bitmap;
+        private _acceptHerImage: createjs.Bitmap;
         private _startOverButton: objects.Button;
 
         
@@ -16,9 +16,9 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add SaveSam Image
-            this._saveSamImage = new createjs.Bitmap("../../Assets/images/SaveSam.png");
-            this.addChild(this._saveSamImage);
+            // add acceptHer Image
+            this._acceptHerImage = new createjs.Bitmap("../../Assets/images/AcceptHer.png");
+            this.addChild(this._acceptHerImage);
             
             // add the Start Over button to the MENU scene
             this._startOverButton = new objects.Button(
@@ -34,7 +34,7 @@ module scenes {
             
         }
 
-        // Kill_SAM Scene updates here
+        // ACCEPT_HER Scene updates here
         public update(): void {
 
         }

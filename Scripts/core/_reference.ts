@@ -16,3 +16,4 @@
 /// <reference path="../scenes/hide.ts" />
 /// <reference path="../scenes/killSam.ts" />
 /// <reference path="../scenes/saveSam.ts" />
+/// <reference path="../scenes/acceptHer.ts" />
